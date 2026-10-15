@@ -1,0 +1,137 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-image: linear-gradient(100deg, #000f22, #1b3554, #3f6593, #5b86b6, #80aad3, #c0e6fd);
+    background-size: 400% 400%;
+    animation: wave 10s ease infinite;
+    color:#4a3b32; 
+}
+
+@keyframes wave {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+    color: rgba(255, 255, 255, 0.851);
+}
+.container {
+    display: flex;
+    gap: 20px;
+}
+
+.left-box,
+.right-box {
+    background: #f7f8facb;
+    padding: 20px;
+    border-radius: 5px;
+    width: 50%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    border: 1px solid #E2E8F0;
+}
+
+.top {
+    padding-bottom: 30px;
+}
+
+.box {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+img {
+    display: inline;
+    width: 160px;
+    height: 220px;
+    border-radius: 10px;
+}
+
+.movie-card {
+    display: inline-block;
+    border: 1px solid #E2E8F0;
+    background-color: #EEF0F4;
+    border-radius: 10px;
+    margin-right: 10px;
+    width: 160px;
+    height: 220px;
+    text-align: center;
+    color: #1E293B;
+}
+
+.movie-card:hover {
+    transform: translateY(-10px);
+    transition: 0.3s;
+    box-shadow: 0 6px 14px rgba(1, 77, 219, 0.674);
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #64748B;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    background: #FFFFFF;
+    color: #1E293B;
+    border: 1px, solid, #E2E8F0;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 15px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    margin-right: 8px;
+    background-color: #3d2bff;
+}
+.reset {
+    background-color: #7e7d7d;
+}
+.reset:hover {
+    background-color: #6e6e6e;
+}
+button:hover {
+    background-color: #4438caa6;
+    padding: 11px, 16px;
+    transition: 0.3s;
+}
+.error {
+    color: red;
+    background: #ffe6e6;
+    padding: 5px;
+    margin-bottom: 10px;
+    display: none;
+    border-radius: 4px;
+}
+
+.success {
+    color: green;
+    background: #e6ffe6;
+    padding: 5px;
+    margin-bottom: 10px;
+    display: none;
+    border-radius: 4px;
+}
+
+.booking-item {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
