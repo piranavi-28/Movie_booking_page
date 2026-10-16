@@ -1,5 +1,5 @@
 (function () {
-    emailjs.init("YOUR_PUBLIC_KEY");
+    emailjs.init("mP9xWLT7rz3Z6LB79");
 })();
 
 let allBookings = [];
@@ -78,7 +78,7 @@ function bookTickets() {
         total_price: total
     };
 
-    emailjs.send("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", emailParams)
+    emailjs.send("service_pebfw1t", "template_g6pwo3j", emailParams)
         .then(function (response) {
             console.log("Email sent successfully!", response.status, response.text);
             successBox.style.display = "block";
