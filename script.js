@@ -85,8 +85,8 @@ function bookTickets() {
             successBox.innerText = "Booking confirmed! Email sent to "+ email;
         }, function (error) {
             console.log("Email send failed (Check EmailJS keys if testing live):", error);
-            successBox.style.display = "block";
-            successBox.innerText = "Booking confirmed! Real email confirmation sent to " + email;
+            errorBox.style.display = "block";
+            errorBox.innerText = "Error booking failed !!" + email;
         });
     displayBookings(allBookings);
     resetForm();
